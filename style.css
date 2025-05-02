@@ -116,7 +116,7 @@ body {
 
 .hero__mockup {
 	z-index: 2;
-	padding: 2rem;
+	margin-bottom: 4rem;
 }
 
 .hero__content {
@@ -142,6 +142,7 @@ body {
 	color: var(--clr-primary-violet);
 	font-size: 0.9rem;
 	margin-bottom: 3rem;
+	box-shadow: 3px 11px 18px -4px rgba(0, 0, 0, 0.489);
 }
 
 .hero__btn:hover {
@@ -168,4 +169,65 @@ body {
 	padding: 0.5rem;
 	width: 2rem;
 	height: 2rem;
+}
+
+.footer__icon:hover {
+	cursor: pointer;
+	color: var(--clr-primary-magenta);
+	border-color: var(--clr-primary-magenta);
+}
+
+@media (min-width: 1440px) {
+	.huddle__header {
+		padding: 4rem;
+	}
+
+	.header__logo {
+		height: 3.7em;
+	}
+
+	.hero__content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 140px 120px 120px 120px;
+		padding: 1rem 4rem;
+		column-gap: 3rem;
+	}
+
+	.hero__title {
+		grid-column: 2;
+		/* border: solid 3px red; */
+		grid-row: 1;
+		font-size: 2.5rem;
+		text-align: start;
+	}
+
+	.hero__text {
+		/* border: solid 3px green; */
+		grid-column: 2;
+		text-align: start;
+		font-size: 1.29rem;
+		grid-row: 2;
+	}
+
+	.hero__btn {
+		grid-column: 2;
+		grid-row: 3;
+		font-size: 1.3rem;
+		height: 3.5rem;
+		width: 13rem;
+	}
+
+	.footer__socials {
+		text-align: end;
+		padding-right: 4rem;
+	}
+
+	.footer__icon {
+		font-size: 1.25rem;
+		height: 2.5rem;
+		width: 2.5rem;
+		text-align: center;
+		margin-right: 1rem;
+	}
 }
